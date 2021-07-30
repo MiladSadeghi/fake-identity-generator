@@ -6,3 +6,76 @@
   box-sizing: border-box;
   font-family: 'Rubik';
 }
+
+.main {
+  background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+}
+
+.container {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.left-content {
+  width: 100%;
+}
+
+.left-content form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+form label {
+  font-size: 1.7rem;
+}
+
+.beauty {
+  width: 80%;
+  padding: 10px 20px;
+  outline: none;
+  border: 2px solid rgb(147, 185, 190);
+  border-radius: 15px;
+  transition: border 100ms ease-in-out;
+  margin: 20px 5px;
+}
+
+.beauty:hover {
+  border-color: rgb(102, 129, 133);
+}
+
+
+.btn {
+  margin: 20px  5px 0;
+  width: 50%;
+  border: none;
+  background-color: rgb(102, 129, 133);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.right-content {
+  width: 100%;
+  border: 10px solid rgba(11, 175, 98, 0.281);
+  border-radius: 8px;
+}
