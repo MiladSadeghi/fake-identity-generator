@@ -12,8 +12,12 @@ function loadData(e) {
   } else {
     url += `${country}/`
   }
-
-  console.log(url);
+  if(gender === '') {
+    url += 'random/' 
+  } else {
+    url += `${gender}/`
+  }
+  
 }
 
 
