@@ -1,3 +1,7 @@
+const showPlace = document.querySelector(".right-content");
+      showRes = document.createElement("div");
+      showRes.classList.add('showRes')
+
 document.querySelector("form").addEventListener("submit", loadData);
 
 function loadData(e) {
@@ -25,9 +29,6 @@ function loadData(e) {
   xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText);
-      const showPlace = document.querySelector(".right-content");
-      const showRes = document.createElement("div");
-      showRes.classList.add('showRes')
       showRes.innerHTML = `
         <div class="fw-600">${response.name}</div>
         <div class="margin-top-10">${response.address}</div>
