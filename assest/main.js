@@ -18,6 +18,18 @@ function loadData(e) {
     url += `${gender}/`
   }
   
+  const xhr = new XMLHttpRequest()
+
+  xhr.open('GET', url, true)
+
+  xhr.onload = function() {
+    if(this.status === 200) {
+      const response = JSON.parse(this.responseText)
+
+    }
+  }
+
+  xhr.send()
 }
 
 
